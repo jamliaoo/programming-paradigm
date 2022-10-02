@@ -3,13 +3,240 @@ import {
   CodeSurferColumns,
   Step,
 } from "code-surfer";
-import { github, vsDark } from "@code-surfer/themes";
+import { comic } from '@mdx-deck/themes'
+import { nightOwl, github } from "@code-surfer/themes";
 
-export const theme = vsDark;
+export const theme = comic;
 
-# Hello 👋
+# Programming Paradigms
 
-You are using [MDX Deck](https://github.com/jxnblk/mdx-deck) and [Code Surfer](https://codesurfer.pomb.us)
+---
+
+## Outline
+
+- What is a paradigm
+- What are some major paradigms?
+- Which paradigm is the best?
+- Recap
+
+---
+
+## what is a paradigm
+
+---
+
+<img src="https://kbimages1-a.akamaihd.net/0585f992-7347-446e-a11a-e64852484cb6/353/569/90/False/the-structure-of-scientific-revolutions.jpg" alt="Image alt" />
+
+---
+
+## a paradigm is a <span style="color:deeppink">worldview</span>
+
+---
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Cellarius_ptolemaic_system.jpg/1024px-Cellarius_ptolemaic_system.jpg" alt="Image alt" />
+
+---
+
+## a paradigm is a <span style="color:deeppink">model</span>
+
+---
+
+## a paradigm enables <span style="color:deeppink">progress</span>
+
+---
+
+## what entities make up the universe
+## how they behave and interact
+
+---
+
+## which problems are worth solving
+## which solutions are legitimate
+
+---
+
+> ## “All models are <span style="color:deeppink">wrong</span>”
+>
+> *George E. P. Boxg*
+
+---
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Heliocentric.jpg" alt="Image alt" />
+
+---
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Portrait_of_Sir_Isaac_Newton%2C_1689.jpg/800px-Portrait_of_Sir_Isaac_Newton%2C_1689.jpg" alt="Image alt" />
+
+---
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg/800px-Einstein_1921_by_F_Schmutzer_-_restoration.jpg" alt="Image alt" />
+
+---
+
+## paradigm -> anomaly -> crisis -> shift
+
+---
+
+## what are some major paradigms?
+
+---
+
+<CodeSurferColumns themes={[comic, nightOwl]}>
+
+<Step>
+
+imperative programming
+
+```js
+follow my commands
+
+in the order I give them
+
+remember state
+```
+
+</Step>
+
+<Step>
+
+imperative programming
+
+```js
+let input = [1, 2, 3];
+let max = input[0];
+for (item of input) {
+  if (item > max) {
+    max = item;
+  }
+}
+console.log(max);
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<CodeSurferColumns themes={[comic, nightOwl]}>
+
+<Step>
+
+object-oriented programming
+
+```js
+keep your state to yourself
+
+receive my messages
+
+respond as you see fit
+```
+
+</Step>
+
+<Step>
+
+object-oriented programming
+
+```js
+class Calculator {
+  constructor {
+    this.nums = [1, 2, 3];
+  }
+  findMax() {
+    return Math.max(...this.nums);
+  }
+}
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<CodeSurferColumns themes={[comic, nightOwl]}>
+
+<Step>
+
+functional programming
+
+```js
+mutable state is dangerous
+
+pure functions are safe
+
+data goes in data comes out
+```
+
+</Step>
+
+<Step>
+
+functional programming
+
+```js
+const a = 123;
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<CodeSurferColumns themes={[comic, nightOwl]}>
+
+<Step>
+
+declarative programming
+
+```js
+these are the facts
+
+this is what I want
+
+I do not care how you do it
+```
+
+</Step>
+
+<Step>
+
+declarative programming
+
+```js
+const Button = () => {
+  <button
+    style={{
+      fontSize: 16,
+      color: "black"
+    }}
+  >
+    Click Me!
+  </button>
+};
+```
+
+</Step>
+
+<Step>
+
+declarative programming
+
+```sql
+SELECT isbn,
+ title,
+ price,
+ price * 0.06 AS sales_tax
+FROM Book
+WHERE price > 100.00
+ORDER BY title;
+```
+
+</Step>
+
+</CodeSurferColumns>
 
 ---
 
@@ -98,7 +325,7 @@ function incididunt(ipsum, ut = 1) {
 
 ---
 
-<CodeSurferColumns themes={[vsDark, github]}>
+<CodeSurferColumns themes={[nightOwl, github]}>
 
 <Step>
 
@@ -148,5 +375,5 @@ const sed = (eiusmod, tempor, incididunt) => {
 
 ---
 
-docs:  
+References:  
 [codesurfer.pomb.us](https://codesurfer.pomb.us)
