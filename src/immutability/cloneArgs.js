@@ -3,15 +3,17 @@ const products = [
   { name: "orange", quantity: 2 },
 ];
 
-const newProducts = products.map((product, index) => {
-  if (index === 0) {
-    return {
-      ...product,
-      quantity: 5
-    };
+const newProducts = products.map(
+  (product, index) => {
+    if (index === 0) {
+      return {
+        ...product,
+        quantity: 5
+      };
+    }
+    return product;
   }
-  return product;
-});
+);
 
 console.log(products);
 // [{ name: "apple", quantity: 0 }, ...]
