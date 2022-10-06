@@ -16,8 +16,8 @@ export const theme = comic;
 
 - What is a paradigm
 - What are some major paradigms?
-- Which paradigm is the best?
-- Recap
+- What do they have in common?
+- What can a paradigm teach me?
 
 ---
 
@@ -140,7 +140,7 @@ object-oriented programming
 
 ```js
 class Calculator {
-  constructor {
+  constructor() {
     this.nums = [1, 2, 3];
   }
   findMax() {
@@ -421,7 +421,50 @@ ORDER BY title;
 
 ---
 
-### Having specialized implementations of the same methods for each class.
+### In programming,
+### polymorphism refers to the same object
+### exhibiting different forms and behaviors.
+
+---
+
+<CodeSurferColumns themes={[github, nightOwl]}>
+
+<Step>
+
+```js file=./src/polymorphism/SeniorEngineer.js
+```
+
+```js file=./src/inheritance/JuniorEngineer.js
+```
+
+</Step>
+
+<Step>
+
+```js 3[22:34] file=./src/polymorphism/SeniorEngineer.js
+```
+
+```js 3[22:34] file=./src/inheritance/JuniorEngineer.js
+```
+
+</Step>
+
+<Step>
+
+```js 8:14 file=./src/polymorphism/SeniorEngineer.js
+```
+
+```js 8:10 file=./src/inheritance/JuniorEngineer.js
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+### Having specialized implementations
+### of the same methods for each class.
 
 ---
 

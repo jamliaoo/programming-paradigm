@@ -6,7 +6,7 @@ class JuniorEngineer extends User {
   }
 
   fixBug() {
-    console.log("Hmm...let's google")
+    console.log("Hmm...let's google");
   }
 }
 
