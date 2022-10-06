@@ -81,65 +81,55 @@ export const theme = comic;
 
 ---
 
-<CodeSurferColumns themes={[comic, nightOwl]}>
+# Imperative Programming
 
-<Step>
+---
 
-imperative programming
-
-```js
-follow my commands
-
-in the order I give them
-
-remember state
-```
-
-</Step>
-
-<Step>
-
-imperative programming
+<CodeSurfer>
 
 ```js
 let input = [1, 2, 3];
 let max = input[0];
+
 for (item of input) {
   if (item > max) {
     max = item;
   }
 }
+
 console.log(max);
 ```
 
-</Step>
-
-</CodeSurferColumns>
+</CodeSurfer>
 
 ---
 
-<CodeSurferColumns themes={[comic, nightOwl]}>
+## Imperative Programming
+- follow my commands
+- in the order I give them
+- remember state
 
-<Step>
+---
 
-declarative programming
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Prim_clockwork.jpg/1024px-Prim_clockwork.jpg" alt="clock" />
+
+---
+
+# Declarative Programming
+
+---
+
+## Declarative Programming
+- these are the facts
+- this is what I want
+- I do not care how you do it
+
+---
+
+<CodeSurfer>
 
 ```js
-these are the facts
-
-this is what I want
-
-I do not care how you do it
-```
-
-</Step>
-
-<Step>
-
-declarative programming
-
-```js
-const Button = () => {
+const Button = () => (
   <button
     style={{
       fontSize: 16,
@@ -148,14 +138,14 @@ const Button = () => {
   >
     Click Me!
   </button>
-};
+);
 ```
 
-</Step>
+</CodeSurfer>
 
-<Step>
+---
 
-declarative programming
+<CodeSurfer>
 
 ```sql
 SELECT isbn,
@@ -167,9 +157,11 @@ WHERE price > 100.00
 ORDER BY title;
 ```
 
-</Step>
+</CodeSurfer>
 
-</CodeSurferColumns>
+---
+
+<img src="https://cognota.com/wp-content/uploads/2019/09/blueprint.jpg" alt="blueprint" />
 
 ---
 
