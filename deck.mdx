@@ -468,6 +468,120 @@ ORDER BY title;
 
 ---
 
+# Functional Programming
+
+---
+
+## Main Concepts:
+- Functions
+
+---
+
+## Main Concepts:
+- ~~Functions~~
+
+---
+
+## Main Concepts:
+- Pure functions
+- Immutability
+- Declarative programming
+
+---
+
+# Pure Functions
+
+---
+
+### It depends only on the input provided
+### It doesn’t inflict changes beyond their scope
+
+---
+
+### No Side Effects
+
+---
+
+<CodeSurfer>
+
+```js file=./src/pureFunctions/counter.js
+```
+
+```js 1 file=./src/pureFunctions/counter.js
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```js title="How many side effects?" file=./src/pureFunctions/getData.js
+```
+
+```js 3[16:21] title="How many side effects?" file=./src/pureFunctions/getData.js
+```
+
+```js 3[3:7] title="How many side effects?" file=./src/pureFunctions/getData.js
+```
+
+```js 4 title="How many side effects?" file=./src/pureFunctions/getData.js
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```md
+- Changing a variable, property, or data structure globally
+- Changing the original value of a function’s argument
+- Processing user input
+- Throwing an exception, unless it’s caught within the same function
+- Printing to the screen or logging
+- Querying the HTML documents, browser cookies, or databases
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```js file=./src/pureFunctions/functionalCounter.js
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurferColumns themes={[github, nightOwl]}>
+
+<Step>
+
+```js file=./src/pureFunctions/counter.example.js
+```
+
+```js file=./src/pureFunctions/functionalCounter.example.js
+```
+
+</Step>
+
+<Step>
+
+```js 1 file=./src/pureFunctions/counter.example.js
+```
+
+```js 10 file=./src/pureFunctions/functionalCounter.example.js
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
 ## what do they have
 # in common?
 
