@@ -16,55 +16,7 @@ export const theme = comic;
 
 ---
 
-<img src="https://kbimages1-a.akamaihd.net/0585f992-7347-446e-a11a-e64852484cb6/353/569/90/False/the-structure-of-scientific-revolutions.jpg" alt="Image alt" />
-
----
-
-## a paradigm is a <span style="color:deeppink">worldview</span>
-
----
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Cellarius_ptolemaic_system.jpg/1024px-Cellarius_ptolemaic_system.jpg" alt="Image alt" />
-
----
-
-## a paradigm is a <span style="color:deeppink">model</span>
-
----
-
-## a paradigm enables <span style="color:deeppink">progress</span>
-
----
-
-## what entities make up the universe
-## how they behave and interact
-
----
-
-## which problems are worth solving
-## which solutions are legitimate
-
----
-
-> ## “All models are <span style="color:deeppink">wrong</span>”
->
-> *George E. P. Boxg*
-
----
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Heliocentric.jpg" alt="Image alt" />
-
----
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Portrait_of_Sir_Isaac_Newton%2C_1689.jpg/800px-Portrait_of_Sir_Isaac_Newton%2C_1689.jpg" alt="newton" />
-
----
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg/800px-Einstein_1921_by_F_Schmutzer_-_restoration.jpg" alt="einstein" />
-
----
-
-## paradigm -> anomaly -> crisis -> shift
+## OOP and FP ?
 
 ---
 
@@ -412,6 +364,81 @@ Alan Kay
 - keep your state to yourself
 - receive my messages
 - respond as you see fit
+
+---
+
+<CodeSurfer>
+
+```js file=./src/antiPattern/superClass.js
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```js 1:5 file=./src/antiPattern/inheritance.js
+```
+
+```js 31:35 file=./src/antiPattern/inheritance.js
+```
+
+```js 7:11 file=./src/antiPattern/inheritance.js
+```
+
+```js 13:17 file=./src/antiPattern/inheritance.js
+```
+
+```js 19:23 file=./src/antiPattern/inheritance.js
+```
+
+</CodeSurfer>
+
+---
+
+## S.O.L.I.D Principles
+
+---
+
+### Robert C. Martin
+
+---
+
+- S — Single Responsibility
+- O — Open-Closed
+- L — Liskov Substitution
+- I — Interface Segregation
+- D — Dependency Inversion
+
+---
+
+<div style={{ width: 1000, height: 800 }}>
+  <img src="https://miro.medium.com/max/4800/1*P3oONz9Da3Tc1w97fMV73Q.webp" alt="Single Responsibility" />
+</div>
+
+---
+
+- Open a database connection
+- Fetch data from database
+- Write the data in an external file
+
+---
+
+- Fetch data from API
+- Render UI
+
+---
+
+<div style={{ width: 1000, height: 800 }}>
+  <img src="https://miro.medium.com/max/4800/1*0MtFBmm6L2WVM04qCJOZPQ.webp" alt="Single Responsibility" />
+</div>
+
+---
+
+<div style={{ width: 800, height: 800 }}>
+  <img src="https://miro.medium.com/max/4800/1*yKk2XKJaCLNlDxQMx1r55Q.webp" alt="Single Responsibility" />
+</div>
 
 ---
 
@@ -765,4 +792,6 @@ References:
 
 - [Programming Across Paradigms](https://gotochgo.com/2017/sessions/78/programming-across-paradigms)
 - [codesurfer.pomb.us](https://codesurfer.pomb.us)
+- [The S.O.L.I.D Principles in Pictures](https://medium.com/backticks-tildes/the-s-o-l-i-d-principles-in-pictures-b34ce2f1e898)
+- [SOLID Principles — explained with examples](https://medium.com/mindorks/solid-principles-explained-with-examples-79d1ce114ace)
 
