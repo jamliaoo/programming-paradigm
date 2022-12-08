@@ -6,7 +6,7 @@ import {
 import { comic } from '@mdx-deck/themes'
 import { nightOwl, github } from "@code-surfer/themes";
 
-export const theme = comic;
+export const theme = github;
 
 # Programming Paradigm
 
@@ -436,14 +436,24 @@ Alan Kay
 ---
 
 <div style={{ width: 1000, height: 800 }}>
-  <img src="https://miro.medium.com/max/4800/1*0MtFBmm6L2WVM04qCJOZPQ.webp" alt="Single Responsibility" />
+  <img src="https://miro.medium.com/max/4800/1*0MtFBmm6L2WVM04qCJOZPQ.webp" alt="Open-Closed" />
 </div>
 
 ---
 
 <div style={{ width: 800, height: 800 }}>
-  <img src="https://miro.medium.com/max/4800/1*yKk2XKJaCLNlDxQMx1r55Q.webp" alt="Open-Closed" />
+  <img src="https://miro.medium.com/max/4800/1*yKk2XKJaCLNlDxQMx1r55Q.webp" alt="Liskov Substitution" />
 </div>
+
+---
+
+- S — Single Responsibility (Separate behaviours)
+- O — Open-Closed (Extend behaviour without changing behaviour)
+- L — Liskov Substitution (Enforce consistency)
+
+---
+
+## Quiz Time!
 
 ---
 
@@ -684,9 +694,9 @@ Alan Kay
 ---
 
 ## React.js
-- Pure functions => no side effect in component
-- Immutability => setState
-- Declarative programming => JSX
+- Pure functions -> no side effect in component
+- Immutability -> setState
+- Declarative programming -> JSX
 
 ---
 
@@ -702,11 +712,25 @@ Alan Kay
 
 ---
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Prim_clockwork.jpg/1024px-Prim_clockwork.jpg" alt="clock" />
+# shared mutable state
 
 ---
 
-# shared mutable state
+<CodeSurfer>
+
+```js 1 file=./src/antiPattern/shareMutableState.js
+```
+
+```js 3:5 file=./src/antiPattern/shareMutableState.js
+```
+
+```js 7:9 file=./src/antiPattern/shareMutableState.js
+```
+
+```js 11:13 file=./src/antiPattern/shareMutableState.js
+```
+
+</CodeSurfer>
 
 ---
 
@@ -722,37 +746,6 @@ Alan Kay
 
 ## which paradigm is
 # the best
-
----
-
-> ## “All models are wrong...
-
-> *George E. P. Boxg*
-
----
-
-> ## “All models are wrong
-> ## but some are <span style="color:deeppink">useful</span>”
-
-> *George E. P. Boxg*
-
----
-
-<div style={{ display: "flex" }}>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Portrait_of_Sir_Isaac_Newton%2C_1689.jpg/800px-Portrait_of_Sir_Isaac_Newton%2C_1689.jpg" alt="newton" />
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg/800px-Einstein_1921_by_F_Schmutzer_-_restoration.jpg" alt="einstein" />
-</div>
-
----
-
-## ~~Is the model true?~~
-
----
-
-## Is the model
-## <span style="color:deeppink">illuminating</span> and <span style="color:deeppink">useful</span>
-
-> *George E. P. Boxg*
 
 ---
 
