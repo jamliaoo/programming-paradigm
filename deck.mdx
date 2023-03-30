@@ -12,15 +12,29 @@ export const theme = github;
 
 ---
 
-## what is a paradigm
+## What is a paradigm?
 
 ---
 
-## OOP and FP ?
+### Object-Oriented Programming
+### Functional Programming
+etc.
 
 ---
 
-## what are some major paradigms?
+## But, Why?
+
+---
+
+<img style={{ height: '80%' }} src="https://firebasestorage.googleapis.com/v0/b/programming-paradigm.appspot.com/o/why-programming-paradigm.png?alt=media&token=0eb5ebf8-72af-4bc7-8e3f-39078e9fa9e2" alt="why-programming-paradigm" />
+
+---
+
+## Good Code
+
+---
+
+## What are some major paradigms?
 
 ---
 
@@ -30,17 +44,7 @@ export const theme = github;
 
 <CodeSurfer>
 
-```js
-let input = [1, 2, 3];
-let max = input[0];
-
-for (item of input) {
-  if (item > max) {
-    max = item;
-  }
-}
-
-console.log(max);
+```js file=./src/findMax/findMax-1.js
 ```
 
 </CodeSurfer>
@@ -53,6 +57,28 @@ console.log(max);
 - remember state
 
 ---
+
+### Wait, what is state?
+
+---
+
+### Current status of the program
+### Dynamically change during program execution
+
+---
+
+<CodeSurfer>
+
+```js file=./src/findMax/findMax-1.js
+```
+
+```js 1:2 file=./src/findMax/findMax-1.js
+```
+
+</CodeSurfer>
+
+---
+
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Prim_clockwork.jpg/1024px-Prim_clockwork.jpg" alt="clock" />
 
@@ -221,6 +247,12 @@ ORDER BY title;
 
 ---
 
+## More examples
+- MVC
+- Components
+
+---
+
 # Inheritance
 
 ---
@@ -350,7 +382,7 @@ ORDER BY title;
 
 ---
 
-# messaging
+# Messaging
 
 ---
 
@@ -410,9 +442,9 @@ Alan Kay
 
 ---
 
-- S — Single Responsibility
-- O — Open-Closed
-- L — Liskov Substitution
+- S — Single Responsibility (單一職責原則)
+- O — Open-Closed (開閉原則)
+- L — Liskov Substitution (里氏替換原則)
 - I — Interface Segregation
 - D — Dependency Inversion
 
@@ -421,17 +453,6 @@ Alan Kay
 <div style={{ width: 1000, height: 800 }}>
   <img src="https://miro.medium.com/max/4800/1*P3oONz9Da3Tc1w97fMV73Q.webp" alt="Single Responsibility" />
 </div>
-
----
-
-- Open a database connection
-- Fetch data from database
-- Write the data in an external file
-
----
-
-- Fetch data from API
-- Render UI
 
 ---
 
@@ -447,9 +468,11 @@ Alan Kay
 
 ---
 
-- S — Single Responsibility (Separate behaviours)
-- O — Open-Closed (Extend behaviour without changing behaviour)
-- L — Liskov Substitution (Enforce consistency)
+- Single Responsibility (Separate behaviours)
+
+- Open-Closed (Extend behaviour without changing behaviour)
+
+- Liskov Substitution (Enforce consistency)
 
 ---
 
@@ -557,11 +580,14 @@ Alan Kay
 
 ```md
 - Changing a variable, property, or data structure globally
+
 - Changing the original value of a function’s argument
-- Processing user input
+
+- Send network request
+
 - Throwing an exception, unless it’s caught within the same function
+
 - Printing to the screen or logging
-- Querying the HTML documents, browser cookies, or databases
 ```
 
 </CodeSurfer>
@@ -607,83 +633,53 @@ Alan Kay
 
 ---
 
-## In JavaScript, use const
+<CodeSurfer>
+
+```js 1:3 file=./src/immutability/sample.js
+```
+
+```js 5:7 file=./src/immutability/sample.js
+```
+
+```js 9:11 file=./src/immutability/sample.js
+```
+
+</CodeSurfer>
 
 ---
 
-## Do not modify function arguments
+### Avoiding unintended consequences
+### Easier maintenance and debugging
 
 ---
 
-<CodeSurferColumns themes={[github, nightOwl]}>
+<CodeSurfer>
 
-<Step>
-
-```js file=./src/immutability/let.js
+```js 1:2 file=./src/immutability/getProducts.js
 ```
 
-```js file=./src/immutability/const.js
+```js 4:7 file=./src/immutability/getProducts.js
 ```
 
-</Step>
+```js 9:13 file=./src/immutability/getProducts.js
+```
 
-</CodeSurferColumns>
+</CodeSurfer>
 
 ---
 
-<CodeSurferColumns themes={[github, nightOwl]}>
+<CodeSurfer>
 
-<Step>
-
-```js file=./src/immutability/modifyArgs.js
+```js 4:10 file=./src/immutability/getProductsMap.js
 ```
 
-```js file=./src/immutability/cloneArgs.js
+```js 12:16 file=./src/immutability/getProductsMap.js
 ```
 
-</Step>
-
-<Step>
-
-```js 1:4 file=./src/immutability/modifyArgs.js
+```js 18:22 file=./src/immutability/getProductsMap.js
 ```
 
-```js 1:4 file=./src/immutability/cloneArgs.js
-```
-
-</Step>
-
-<Step>
-
-```js 6:13 file=./src/immutability/modifyArgs.js
-```
-
-```js 6:16 file=./src/immutability/cloneArgs.js
-```
-
-</Step>
-
-<Step>
-
-```js 9 file=./src/immutability/modifyArgs.js
-```
-
-```js 9:12 file=./src/immutability/cloneArgs.js
-```
-
-</Step>
-
-<Step>
-
-```js 15:18 file=./src/immutability/modifyArgs.js
-```
-
-```js 18:21 file=./src/immutability/cloneArgs.js
-```
-
-</Step>
-
-</CodeSurferColumns>
+</CodeSurfer>
 
 ---
 
@@ -712,6 +708,11 @@ Alan Kay
 
 ---
 
+### Easier to reason about
+### Less prone to errors
+
+---
+
 [Ramda](https://ramdajs.com/)
 
 [Lodash](https://github.com/lodash/lodash/wiki/FP-Guide)
@@ -725,13 +726,6 @@ Alan Kay
 
 ---
 
-## React.js
-- Pure functions -> no side effect in component
-- Immutability -> setState
-- Declarative programming -> JSX
-
----
-
 ## Functional Programming
 - mutable state is dangerous
 - pure functions are safe
@@ -739,12 +733,12 @@ Alan Kay
 
 ---
 
-## what do they have
+## What do they have
 # in common?
 
 ---
 
-# shared mutable state
+# Shared mutable state
 
 ---
 
@@ -805,12 +799,12 @@ Alan Kay
 
 ---
 
-## which paradigm is
+## Which paradigm is
 # the best
 
 ---
 
-## what can a paradigm
+## What can a paradigm
 # teach me?
 
 ---
@@ -840,9 +834,19 @@ Alan Kay
 
 ---
 
+
+# What's the Point
+### OOP vs. FP
+
+---
+
+# What's the Point
+### ~~OOP vs. FP~~
+
+---
+
 # What's the Point
 - don’t fight your paradigm, <span style="color:deeppink">embrace</span> it
-- be open to <span style="color:deeppink">shift</span>
 - paradigm is your tool, not your goal
 
 ---

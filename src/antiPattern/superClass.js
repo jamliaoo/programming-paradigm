@@ -1,25 +1,11 @@
 class SuperClass {
-  constructor() {
+  login() {}
 
-  }
+  logout() {}
 
-  login() {
+  fetchData() {}
 
-  }
+  renderUI() {}
 
-  logout() {
-
-  }
-
-  fetchData() {
-
-  }
-
-  renderUI() {
-
-  }
-
-  renderAnotherUI() {
-
-  }
+  renderAnotherUI() {}
 }

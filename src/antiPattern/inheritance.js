@@ -24,12 +24,12 @@ class 我爺 extends 我爺的爸 {
 
 class 我爸 extends 我爺 {
   打開錢包() {
-    throw new Error('你沒有錢包');
+    throw new Error('你連錢包都沒有');
   }
 }
 
 class 我 extends 我爸 {
   打開錢包() {
-    throw new Error('你沒有錢包');
+    throw new Error('你連錢包都沒有');
   }
 }
